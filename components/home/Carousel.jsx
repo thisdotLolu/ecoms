@@ -6,9 +6,9 @@ import { COLORS } from '../../constants'
 
 const Carousel = () => {
     const slides = [
-        'https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705708800&semt=ais',
-        'https://img.freepik.com/free-photo/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-red-onion-wooden-table_2829-19631.jpg',
-        'https://pagen.com/globalassets/recept/street_food_roror_tillbehor.jpg?w=734&h=462&mode=crop&resized=true'
+        'https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129804.jpg',
+        'https://media.istockphoto.com/photos/home-interior-mockup-with-dark-green-armchair-table-and-decor-in-picture-id1274163113?k=20&m=1274163113&s=612x612&w=0&h=kqxQ4kC6Scim0jlCoaucA0TDc5ruECSVel7a0FnQ9FE=',
+        'https://m.media-amazon.com/images/I/71u3F2NZ9gL._AC_UF1000,1000_QL80_DpWeblab_.jpg'
     ]
 
   return (

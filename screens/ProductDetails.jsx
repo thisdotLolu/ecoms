@@ -3,11 +3,14 @@ import React, { useState } from 'react'
 import styles from './productdetails.styles'
 import {Ionicons,SimpleLineIcons, MaterialCommunityIcons, Fontisto} from '@expo/vector-icons'
 import { COLORS, SIZES } from '../constants'
+import { useRoute } from '@react-navigation/native'
 
 
 
 const ProductDetails = ({navigation}) => {
     const [count, setCount] = useState(1)
+    const route = useRoute();
+    const {item} = route.params
 
     const increment = () =>{
         setCount(count+1)
