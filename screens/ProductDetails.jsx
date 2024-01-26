@@ -45,7 +45,7 @@ const ProductDetails = ({navigation}) => {
       <Image
         style={styles.image}
         source={{
-          uri: "https://media.istockphoto.com/id/1323194108/photo/plant-based-black-bean-burger-in-a-light-and-bright-environment.jpg?s=612x612&w=0&k=20&c=EqvhgipGfLluH8ULjtdAF5G6a2vJuKqZccNp2DouVWc=",
+          uri: item.imageUrl,
         }}
       />
 
@@ -53,7 +53,7 @@ const ProductDetails = ({navigation}) => {
         <View style={styles.titleRow}>
           <Text style={styles.title}>Product</Text>
           <View style={styles.priceWrapper}>
-            <Text style={styles.price}>$999.34</Text>
+            <Text style={styles.price}>${item.price}</Text>
           </View>
         </View>
         <View style={styles.ratingRow}>
@@ -79,7 +79,7 @@ const ProductDetails = ({navigation}) => {
                Description
             </Text>
             <Text style={styles.descText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores modi exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum unde qui! Voluptatem autem minima expedita tempora inventore nostrum, rerum provident aspernatur repudiandae. Eaque unde laboriosam exercitationem, officiis temporibus hic eius pariatur esse? Praesentium!
+               {item.description}
             </Text>
         </View>
         <View style={{marginBottom: SIZES.small}}>
@@ -92,7 +92,7 @@ const ProductDetails = ({navigation}) => {
                 <Ionicons
                 name='location-outline'
                 size={20}/>
-                <Text> Dallas </Text>
+                <Text> {item.product_location}</Text>
                 </View>
 
                 <View
